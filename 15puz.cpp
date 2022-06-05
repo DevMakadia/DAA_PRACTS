@@ -9,7 +9,6 @@ int getInvCount(int arr[])
     {
         for (int j = i + 1; j < N * N; j++)
         {
-
             if (arr[j] && arr[i] && arr[i] > arr[j])
                 inv_count++;
         }
@@ -19,7 +18,6 @@ int getInvCount(int arr[])
  
 int findXPosition(int puzzle[N][N])
 {
-
     for (int i = N - 1; i >= 0; i--)
         for (int j = N - 1; j >= 0; j--)
             if (puzzle[i][j] == 0)
@@ -28,7 +26,6 @@ int findXPosition(int puzzle[N][N])
  
 bool isSolvable(int puzzle[N][N])
 {
-
     int invCount = getInvCount((int*)puzzle);
 
     if (N & 1)

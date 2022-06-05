@@ -2,7 +2,7 @@
 using namespace std;
 
 #define V 4
- 
+
 void printSolution(int color[]);
 
 bool isSafe(bool graph[V][V], int color[])

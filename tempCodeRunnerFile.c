@@ -7,18 +7,18 @@ void main()
     void knapsack(float, int, float);
     int s1 = 0;
     printf("\n\n\t\tKNAPSACK PROBLEM USING BACKTRACKING\n\n");
-    printf("\n\tEnter the No. of Items : ");
+    printf("\n\tEnter the No.of Items: ");
     scanf("%d", &n);
     printf("\n\tEnter the Weight & Value for the Items \n");
     for (i = 0; i < n; i++)
     {
-        printf("\n\titem %d : ", i + 1);
-        scanf("%d%d", &w[k], &pr[k]);
+        printf("\n\titem %d: ", i + 1);
+        scanf("%d %d", &w[k], &pr[k]);
         r += w[k];
         s1 += pr[k];
     }
-    printf("\n\n\t\tEnter the Knapsack Capacity : ");
-    scanf("%d", &m);
+    printf("\n\n\t\tEnter the Knapsack Capacity: ");
+    scanf("% d", &m);
     printf("\n\n\tITEMS IN THE KNAPSACK\n\n");
     printf("\titem\tweight\tvalue\n\n");
     knapsack(0, 1, r);
@@ -34,7 +34,7 @@ void knapsack(float s, int k, float r)
         {
             if (x[j])
             {
-                printf("\n%d\t%d\t", j, w[j]);
+                printf("\n%d\t %d\t", j, w[j]);
                 printf("%d ", pr[j]);
             }
         }
