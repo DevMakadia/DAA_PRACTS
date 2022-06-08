@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <stdio.h>
 int max, min;
 int a[100];
+
 void maxmin(int i, int j)
 {
     int max1, min1, mid;
@@ -38,7 +38,9 @@ void maxmin(int i, int j)
         }
     }
 }
+
 int main()
+
 {
     int i, num;
     printf("\nEnter the total number of numbers : ");
@@ -54,3 +56,4 @@ int main()
     printf("Maximum element in an array : %d\n", max);
     return 0;
 }
+

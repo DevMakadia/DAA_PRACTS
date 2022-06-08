@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int amt;
@@ -39,7 +38,7 @@ int main()
     cout << "Enter the number of containers :";
     cin >> n;
 
-    cout << "Enter the weight of the containers :";
+    cout << "Enter the weights of the containers :";
     for (i = 0; i < n; i++)
     {
         cin >> C[i];

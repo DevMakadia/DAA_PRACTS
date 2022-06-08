@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
@@ -25,7 +23,7 @@ void main()
 long prod(long u, long v)
 {
 	long x, y, w, z;
-	long n, m, p, q, r;
+	long n, m, p1, p2, p3;
 
 	n = noOfDigit(u, v);
 
@@ -38,20 +36,21 @@ long prod(long u, long v)
 	{
 		return (u * v);
 	}
+
 	else
 	{
 		m = floor(n / 2);
 
-		w = u / pow(10, m);
-		x = u % (int)pow(10, m);
+		x = u / pow(10, m);
+		w = u % (int)pow(10, m);
 		y = v / pow(10, m);
 		z = v % (int)pow(10, m);
 
-		p = prod(w, y);
-		q = prod(x, z);
-		r = prod(w + x, y + z);
+		p1 = prod(x, w);
+		p2 = prod(y, z);
+		p3 = prod(x + w, y + z);
 
-		return p * pow(10, 2 * m) + (r - p - q) * pow(10, m) + q;
+		return p1 * pow(10, 2 * m) + (p3 - p1 - p2) * pow(10, m) + p2;
 	}
 }
 

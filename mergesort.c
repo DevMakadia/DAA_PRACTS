@@ -1,5 +1,3 @@
-// Merge sort in C
-
 #include <stdio.h>
 
 // Merge two subarrays L and M into arr

@@ -28,14 +28,16 @@ int findMinCoins(int coins[], int size, int value)
 int main()
 {
     int coins[100], size;
+    
     printf("Enter number of different coins :\n");
     scanf("%d", &size);
     printf("Enter %d denominations : \n",size);
+
     for (int i = 0; i < size; i++)
     {
         scanf("%d", &coins[i]);
     }
-    int value, i;
+    int value;
     printf("Enter the amount :\n");
     scanf("%d", &value);
 
@@ -44,7 +46,7 @@ int main()
     printf("Total Coins Needed = %d\n", MinCount);
 
     printf("Coins are:\t");
-    for (i = 0; i < MinCount; i++)
+    for (int i = 0; i < MinCount; i++)
         printf("%d ", ans[i]);
 
     return 0;
